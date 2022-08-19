@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="input.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <script src="https://kit.fontawesome.com/4507369af8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="bg-gray-700 h-auto p-5 sm:flex sm:flex-row sm:items-center sm:justify-between sm:bg-gray-800 sm:h-[60px]">
+        <div class="head flex items-center justify-between">
+            <h1 class="logo text-white text-3xl mx-2">GYMkhana</h1>
+            <i class="text-xl sm:invisible fa-solid fa-bars mx-2 text-white cursor-pointer mt-2"></i>
+        </div>
+        <ul class="transition-all mt-2 flex flex-col items-center space-y-6 text-white sm:flex-row sm:space-x-4 sm:space-y-0 sm:mx-2 h-0 sm:h-auto z-[10]">
+            <li></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="index.html">Home</a></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="workout.html">Workout</a></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="contact.html">Contact</a></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="">
+        <!-- Work Pending -->
+    </main>
+    <footer class="h-auto p-10 bg-gray-300 flex items-center justify-center">
+        <h1 class="text-center text-[20px] font-mono break-words">Copyright <span>&copy</span> Gymkhana - 2022 August 20</h1>
+    </footer>
+</body>
+<script>
+    let menu = document.querySelector('.head i');
+    let navItems = document.querySelector("ul");
+    let listItems = Array.from(document.querySelectorAll("ul li"));
+    menu.addEventListener('click',()=>{
+        navItems.classList.toggle('h-[200px]');
+        listItems.map((item)=>{
+           if (item.classList.contains('invisible')){
+            item.classList.remove('invisible');
+            item.classList.add('visible');
+           }
+           else{
+            item.classList.remove('visible');
+            item.classList.add('invisible');
+           }
+        })
+    })
+</script>
+</html>
