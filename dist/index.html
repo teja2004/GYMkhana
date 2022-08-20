@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="\input.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind CSS</title>
+    <script src="https://kit.fontawesome.com/4507369af8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="bg-gray-700 h-auto p-5 sm:flex sm:flex-row sm:items-center sm:justify-between sm:bg-gray-800 sm:h-[60px]">
+        <div class="head flex items-center justify-between">
+            <h1 class="logo text-white text-3xl mx-2">GYMkhana</h1>
+            <i class="text-xl sm:invisible fa-solid fa-bars mx-2 text-white cursor-pointer mt-2"></i>
+        </div>
+        <ul class="transition-all mt-2 flex flex-col items-center space-y-6 text-white sm:flex-row sm:space-x-4 sm:space-y-0 sm:mx-2 h-0 sm:h-auto z-[10]">
+            <li></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="index.html">Home</a></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="workout.html">Workout</a></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="contact.html">Contact</a></li>
+            <li class="invisible sm:visible"><a class="no-underline" href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <main class="w-[100%]">
+        <div class="h-[150vh] bg-logo bg-cover">
+            <h1 class="sm:text-left text-gray-200 hover:text-white font-sans sm:text-[50px] sm:pt-[250px] sm:mx-10 pt-[200px] text-[35px] mx-6">GYMkhana</h1>
+            <p class="text-white mx-6 text-[20px] sm:mx-10 my-6">The healthy way of life company.Get a jump on your day.Dare to be great.Make yourself stronger than your excuses.The only bad workout is no workout.Your body hears everything that your mind says.Convenient.Affordable.Love yourself enough to work harder.</p>
+            <a href="workout.html" title="GYMkhana" type="button" class="bg-white border border-black cursor-pointer px-4 py-2 mx-6 my-4 rounded-xl sm:mx-10"><i class="fa-solid fa-right-to-bracket text-3xl"></i></a>
+        </div>
+        <hr>    
+        <div class="bg-gray-200 pt-[10px]"> 
+            <h1 class="text-center font-sans text-[50px] text-blue-900">Workouts</h1>
+            <div class="p-10 w-[100%] flex items-center flex-col sm:justify-around sm:flex-row">
+                <img class="rounded-[10px] shadow w-[100%] sm:max-w-[50%] h-auto" src="/assets/CableFlys.c712c094.jpg" alt="CableFlys">
+                <a href="https://www.youtube.com/watch?v=Iwe6AmxVf7o" target="_blank" rel="noopener" class="text-center sm:text-[6vmin] text-[6vmin] my-3 text-black hover:text-blue-900 hover:underline">Cable Flys</a>
+            </div>
+            <div class="p-10 w-[100%] flex items-center flex-col sm:justify-center sm:flex-col">
+                <img class="rounded-[10px] shadow w-[100%] sm:max-w-[90%] h-auto" src="/assets/FoamRolling.f785a667.jpg" alt="FoamRolling">
+                <a href="https://www.youtube.com/watch?v=t4A523-O5uk" target="_blank" rel="noopener" class="text-center sm:text-[6vmin] text-[6vmin] my-4 text-black hover:text-blue-900 hover:underline break-words">FoamRolling</a>
+            </div>
+            <div class="p-10 w-[100%] flex items-center flex-col sm:justify-around sm:flex-row">
+                <img class="rounded-[10px] shadow w-[100%] sm:max-w-[50%] h-auto" src="/assets/Dumbell.8f7c1d4e.jpg" alt="Dumbell">
+                <a href="https://www.youtube.com/watch?v=xqVBoyKXbsA" target="_blank" rel="noopener" class="text-center sm:text-[6vmin] text-[6vmin] my-3 text-black hover:text-blue-900 hover:underline break-words">Dumbell<br>Lifting</a>
+            </div>
+            <div class="p-10 w-[100%] flex items-center flex-col sm:justify-center sm:flex-col">
+                <img class="rounded-[10px] shadow w-[100%] sm:max-w-[90%] h-auto" src="/assets/PPL.29a02958.jpg" alt="PPL">
+                <a href="https://www.youtube.com/watch?v=HE45jVN7XKM" target="_blank" rel="noopener" class="text-center sm:text-[6vmin] text-[6vmin] my-4 text-black hover:text-blue-900 hover:underline break-words">PPL</a>
+            </div>
+            <div class="p-10 w-[100%] flex items-center flex-col sm:justify-center sm:flex-col">
+                <img class="rounded-[10px] shadow w-[100%] sm:max-w-[90%] h-auto" src="/assets/CableFly2.a2c9721c.jpg" alt="CableFly2">
+                <a href="https://www.youtube.com/watch?v=Iwe6AmxVf7o" target="_blank" rel="noopener" class="text-center sm:text-[6vmin] text-[6vmin] my-4 text-black hover:text-blue-900 hover:underline break-words">CableFlyStrech</a>
+            </div>
+            <div class="p-10 w-[100%] flex items-center flex-col sm:justify-around sm:flex-row">
+                <img class="rounded-[10px] shadow w-[100%] sm:max-w-[50%] h-auto" src="/assets/WorkoutThumb.1656dc8b.jpg" alt="Workout Thumb">
+                <a href="https://www.menshealth.com/fitness/a19546593/exercises-you-can-do-with-broken-thumb/" target="_blank" rel="noopener" class="text-center sm:text-[6vmin] text-[6vmin] my-3 text-black hover:text-blue-900 hover:underline break-words">Workout<br>Thumb</a>
+            </div>
+        </div>
+    </main>
+    <footer class="h-auto p-10 bg-gray-300 flex items-center justify-center">
+        <h1 class="text-center text-[20px] font-mono break-words">Copyright <span>&copy</span> Gymkhana - 2022 August 20</h1>
+    </footer>
+</body>
+<script>
+    let menu = document.querySelector('.head i');
+    let navItems = document.querySelector("ul");
+    let listItems = Array.from(document.querySelectorAll("ul li"));
+    menu.addEventListener('click',()=>{
+        navItems.classList.toggle('h-[200px]');
+        listItems.map((item)=>{
+           if (item.classList.contains('invisible')){
+            item.classList.remove('invisible');
+            item.classList.add('visible');
+           }
+           else{
+            item.classList.remove('visible');
+            item.classList.add('invisible');
+           }
+        })
+    })
+</script>
+</html>
